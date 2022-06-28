@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <CodeAnalysisRuleSet>../settings.ruleset</CodeAnalysisRuleSet>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="StyleCop.Analyzers"/>
+        <None Remove="DTOs\CustomLoggingDTOs\"/>
+        <None Remove="DTOs\CategoryDTOs\"/>
+        <None Remove="DTOs\AuthorDTOs\"/>
+        <None Remove="DTOs\BookDTOs\"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="DTOs\CustomLoggingDTOs\"/>
+        <Folder Include="DTOs\CategoryDTOs\"/>
+        <Folder Include="DTOs\AuthorDTOs\"/>
+        <Folder Include="DTOs\BookDTOs\"/>
+    </ItemGroup>
+</Project>
